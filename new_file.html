@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>自动计时工资计算器</title>
+		<link rel="stylesheet" href="new_file.css"> 
+	</head>
+	<body>
+		<h1>自动计时工资计算器</h1>  
+		  
+		    <label for="rate">请输入时薪:</label>  
+		    <input type="number" id="rate" min="0" step="0.000277778" value="20">  
+		  
+		    <button onclick="startTimer()">开始计时</button>  
+		    <button onclick="stopTimer()">停止计时</button> 
+			<button onclick="clearHistory()">清除历史</button>  
+			
+			<p>当前时间: <span id="currentTime"></span></p> 
+		    <p>已工作时间: <span id="workHours">0</span> 小时</p>  
+		    <p>当前工资: <span id="salary">0</span> 元</p>  
+
+		<h2>历史工资</h2>  
+			<ul id="salaryHistory"></ul> 
+		  
+		    <script src="new_file.js"></script>  
+	</body>
+</html>
